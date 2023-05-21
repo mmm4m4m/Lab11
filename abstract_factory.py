@@ -8,7 +8,7 @@ class AbstractMovie(ABC):
 
     @abstractmethod
     def get_duration(self):
-        '''длительность''''
+        '''длительность'''
 
 
 class ActionMovie(AbstractMovie):
@@ -44,8 +44,8 @@ class ComedyMovieFactory(AbstractMovieFactory):
 
 def client_code(factory):
     movie = factory.create_movie()
-    print("Title:", movie.get_title())
-    print("Duration:", movie.get_duration())
+    print("Название:", movie.get_title())
+    print("Длительность:", movie.get_duration())
 
     
 if __name__ == '__main__':
